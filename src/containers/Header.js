@@ -8,16 +8,16 @@ class Header extends Component {
         <div className="site-title">Jermaine Davis</div>
         <div className="sub-header">
           <div className=".sub-header-column">
-            Designer, Developer
+            {this.props.description}
           </div>
           <div className=".sub-header-column">
-            Los Angeles, California
+            {this.props.location}
           </div>
           <div className=".sub-header-column">
             <a href="mailto:majorwaves@gmail.com">Contact</a>, About
           </div>
           <div className=".sub-header-column">
-            <a href="https://twitter.com/majorwaves">Twitter</a>, <a href="https://instagram.com/siouxsiescrew">Instagram</a>
+            <a href={this.props.twitter}>Twitter</a>, <a href={this.props.instagram}>Instagram</a>
           </div>
         </div>
       </header>
