@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header.js';
+import Header from '../components/Header.js';
 import './App.css';
 const contentful = require('contentful');
 
@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      entry: []
+      info: []
     }
   }
 
@@ -20,7 +20,7 @@ class App extends Component {
     client.getEntry('48yFnnMfyweEu0usOsIQaI')
       .then((entry) => {
         this.setState({
-          entry: entry.fields
+          info: entry.fields
         });
       });
   }
@@ -29,10 +29,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header
-          description={this.state.entry.description}
-          location={this.state.entry.location}
-          twitter={this.state.entry.twitter}
-          instagram={this.state.entry.instagram}>
+          description={this.state.info.description}
+          location={this.state.info.location}
+          twitter={this.state.info.twitter}
+          instagram={this.state.info.instagram}>
         </Header>
       </div>
     );
