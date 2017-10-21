@@ -17,7 +17,8 @@ class PostFeed extends Component {
 
   componentDidMount() {
     client.getEntries({
-      'content_type': 'project'
+      content_type: 'project',
+      order: 'sys.createdAt'
     })
     .then((entries) => {
         this.setState({
