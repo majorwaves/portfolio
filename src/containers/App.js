@@ -5,8 +5,8 @@ import './App.css';
 const contentful = require('contentful');
 
 var client = contentful.createClient({
-  space: 'br6aauxhl8qu',
-  accessToken: '5e30bf4b36119ac52c2320c82e8a750a57821ae9f414a149c90e54a061e4feb0'
+  space: `${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`,
+  accessToken: `${process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN}`
 });
 
 class App extends Component {
@@ -24,6 +24,7 @@ class App extends Component {
           info: entry.fields
         });
       });
+      console.log(`${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`)
   }
 
   render() {
