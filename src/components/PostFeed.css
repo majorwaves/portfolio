@@ -1,0 +1,23 @@
+.postFeed {
+  margin-top: 100px; }
+  .postFeed .post {
+    display: flex;
+    justify-content: space-between; }
+    .postFeed .post figure {
+      width: 46vw;
+      padding: 0;
+      margin: 0; }
+      .postFeed .post figure img {
+        width: 100%; }
+    .postFeed .post .postInfo {
+      width: 46vw; }
+      .postFeed .post .postInfo h1 {
+        margin: 0 0 2vw;
+        text-transform: uppercase;
+        font-size: 3.75vw;
+        font-weight: normal; }
+      .postFeed .post .postInfo span {
+        font-size: 1.5vw;
+        font-family: 'Inconsolata', monospace; }
+      .postFeed .post .postInfo p {
+        font-size: 3.75vw; }

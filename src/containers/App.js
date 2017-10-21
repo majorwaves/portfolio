@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
+import PostFeed from '../components/PostFeed.js';
 import './App.css';
 const contentful = require('contentful');
 
@@ -34,6 +35,7 @@ class App extends Component {
           twitter={this.state.info.twitter}
           instagram={this.state.info.instagram}>
         </Header>
+        <PostFeed></PostFeed>
       </div>
     );
   }

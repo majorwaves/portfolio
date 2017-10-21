@@ -1,0 +1,38 @@
+.postFeed {
+  margin-top: 100px;
+
+  .post {
+    display: flex;
+    justify-content: space-between;
+
+    figure {
+      width: 46vw;
+      padding: 0;
+      margin: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .postInfo {
+      width: 46vw;
+
+      h1 {
+        margin: 0 0 2vw;
+        text-transform: uppercase;
+        font-size: 3.75vw;
+        font-weight: normal;
+      }
+
+      span {
+        font-size: 1.5vw;
+        font-family: 'Inconsolata', monospace;
+      }
+
+      p {
+        font-size: 3.75vw;
+      }
+    }
+  }
+}

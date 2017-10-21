@@ -1,8 +1,10 @@
 header {
-  font-size: 4vw; }
+  font-size: 3.75vw; }
   header .site-title {
     text-transform: uppercase;
     margin-bottom: 30px; }
   header .sub-header {
     display: flex;
     justify-content: space-between; }
+    header .sub-header .sub-header-column {
+      width: 21.5vw; }
