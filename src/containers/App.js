@@ -24,7 +24,6 @@ class App extends Component {
           info: entry.fields
         });
       });
-      console.log(`${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`)
   }
 
   render() {

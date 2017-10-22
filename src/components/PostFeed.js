@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './PostFeed.css';
 const contentful = require('contentful');
+var ReactMarkdown = require('react-markdown');
 
 var client = contentful.createClient({
   space: `${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`,
@@ -29,6 +30,7 @@ class PostFeed extends Component {
 
   render() {
     let projects = this.state.projects.map((project, index) => {
+      const description = project.fields.description;
       return (
         <div className="post" key={index}>
           <figure>
@@ -36,8 +38,8 @@ class PostFeed extends Component {
           </figure>
           <div className="postInfo">
             <h1>{project.fields.title}</h1>
-            <span>{project.fields.link}</span>
-            <p>{project.fields.description}</p>
+            <span><a href={project.fields.link}>{project.fields.link}</a></span>
+            <ReactMarkdown source={description} />
           </div>
         </div>
       )

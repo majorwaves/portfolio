@@ -7,8 +7,22 @@
     .postFeed .post figure {
       width: 46vw;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      font-size: 0;
+      position: relative;
+      border: 2px solid black;
+      padding-top: 30px; }
+      .postFeed .post figure:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 10px;
+        background: url(../images/web-buttons.svg) no-repeat;
+        background-size: 100%; }
       .postFeed .post figure img {
+        border-top: 2px solid black;
         width: 100%; }
     .postFeed .post .postInfo {
       width: 46vw; }
@@ -22,3 +36,5 @@
         font-family: 'Inconsolata', monospace; }
       .postFeed .post .postInfo p {
         font-size: 3.75vw; }
+        .postFeed .post .postInfo p a {
+          font-style: italic; }
