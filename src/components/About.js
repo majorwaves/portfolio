@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import './PostFeed.css';
+import ReactMarkdown from 'react-markdown';
+import './About.css';
 
 class About extends Component {
 
   render() {
 
   return (
-      <div className="About">
-        <p>Hey!</p>
+      <div className="about">
+        <ReactMarkdown source={this.props.bio} />
+        <ReactMarkdown source={this.props.bio} />
       </div>
     )
   }

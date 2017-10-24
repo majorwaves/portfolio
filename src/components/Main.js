@@ -10,7 +10,7 @@ class App extends Component {
       <main>
         <Switch>
         <Route exact path="/" render={props => <PostFeed projects={this.props.projects} />} />
-        <Route exact path='/about' component={About}/>
+        <Route exact path="/about" render={props => <About bio={this.props.bio} />} />
         </Switch>
       </main>
     );
