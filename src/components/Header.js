@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
   render() {
     return (
       <header>
-        <div className="site-title">Jermaine Davis</div>
+        <div className="site-title">
+        <Link to='/'>Jermaine Davis</Link>
+        </div>
         <div className="sub-header">
           <div className="sub-header-column">
             {this.props.description}
@@ -13,12 +16,12 @@ class Header extends Component {
           <div className="sub-header-column">
             {this.props.location}
           </div>
-          <div className="sub-header-column">
-            <a href="mailto:majorwaves@gmail.com">Contact</a>, About
-          </div>
-          <div className="sub-header-column">
-            <a href={this.props.twitter}>Twitter</a>, <a href={this.props.instagram}>Instagram</a>
-          </div>
+            <div className="sub-header-column">
+              <a href="mailto:majorwaves@gmail.com">Contact</a>, <Link to='/about'>About</Link>
+            </div>
+            <div className="sub-header-column">
+              <a href={this.props.twitter}>Twitter</a>, <a href={this.props.instagram}>Instagram</a>
+            </div>
         </div>
       </header>
     );

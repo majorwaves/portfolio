@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
-import PostFeed from '../components/PostFeed.js';
+import Main from '../components/Main.js';
 import './App.css';
 const contentful = require('contentful');
 
@@ -13,15 +13,27 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      info: []
+      info: [],
+      projects: []
     }
   }
 
   componentDidMount() {
+    // TODO: Make this one request
     client.getEntry('48yFnnMfyweEu0usOsIQaI')
       .then((entry) => {
         this.setState({
           info: entry.fields
+        });
+      });
+
+    client.getEntries({
+      content_type: 'project',
+      order: 'sys.createdAt'
+    })
+    .then((entries) => {
+        this.setState({
+          projects: entries.items
         });
       });
   }
@@ -33,9 +45,9 @@ class App extends Component {
           description={this.state.info.description}
           location={this.state.info.location}
           twitter={this.state.info.twitter}
-          instagram={this.state.info.instagram}>
-        </Header>
-        <PostFeed></PostFeed>
+          instagram={this.state.info.instagram}/>
+
+        <Main bio={this.state.info.bio} projects={this.state.projects} />
       </div>
     );
   }
