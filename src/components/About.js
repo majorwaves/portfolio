@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
-import './About.css';
+import '../styles/About.css';
 
 class About extends Component {
 

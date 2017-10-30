@@ -1,0 +1,30 @@
+header {
+  font-size: 3.5vw; }
+  header .site-title {
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  header .sub-header {
+    display: flex;
+    justify-content: space-between; }
+    header .sub-header .sub-header-column {
+      width: 21.5vw; }
+      header .sub-header .sub-header-column:first-of-type:after {
+        content: "\25D0";
+        display: block;
+        margin-top: .5em;
+        font-size: 3vw; }
+      header .sub-header .sub-header-column:nth-of-type(2):after {
+        content: "\25D3";
+        display: block;
+        margin-top: .5em;
+        font-size: 3vw; }
+      header .sub-header .sub-header-column:nth-of-type(3):after {
+        content: "\25D1";
+        display: block;
+        margin-top: .5em;
+        font-size: 3vw; }
+      header .sub-header .sub-header-column:nth-of-type(4):after {
+        content: "\25D2";
+        display: block;
+        margin-top: .5em;
+        font-size: 3vw; }

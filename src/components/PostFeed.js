@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PostFeed.css';
+import '../styles/PostFeed.css';
 var ReactMarkdown = require('react-markdown');
 
 class PostFeed extends Component {

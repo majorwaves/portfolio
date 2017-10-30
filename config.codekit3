@@ -21,6 +21,109 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/build\/asset-manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/asset-manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/build\/favicon.png": {
+		"ft": 32768,
+		"iS": 617,
+		"oA": 0,
+		"oAP": "\/build\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/index.html",
+		"oF": 0
+		},
+	"\/build\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/build\/service-worker.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/service-worker-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/static\/css\/main.16df4d4e.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/static\/css\/main.16df4d4e-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/static\/css\/main.16df4d4e.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/static\/css\/main.16df4d4e.css.map",
+		"oF": 0
+		},
+	"\/build\/static\/js\/main.d11de10d.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/static\/js\/main.d11de10d-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/static\/js\/main.d11de10d.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/static\/js\/main.d11de10d.js.map",
+		"oF": 0
+		},
+	"\/build\/static\/media\/HaasGrotDisp-55Roman.554019b9.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/static\/media\/HaasGrotDisp-55Roman.554019b9.eot",
+		"oF": 0
+		},
+	"\/build\/static\/media\/HaasGrotDisp-55Roman.5f3bc854.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/static\/media\/HaasGrotDisp-55Roman.5f3bc854.woff",
+		"oF": 0
+		},
+	"\/build\/static\/media\/HaasGrotDisp-55Roman.8aa7c2f3.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/static\/media\/HaasGrotDisp-55Roman.8aa7c2f3.ttf",
+		"oF": 0
+		},
+	"\/build\/static\/media\/web-buttons.02640bc2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/static\/media\/web-buttons.02640bc2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -96,15 +199,15 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/Header.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
+	"\/src\/components\/About.js": {
+		"ft": 64,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/components\/Header-min.css",
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/src\/components\/About-min.js",
 		"oF": 0,
-		"oS": 3
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/components\/Header.js": {
 		"ft": 64,
@@ -116,28 +219,15 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/Header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
+	"\/src\/components\/Main.js": {
+		"ft": 64,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/components\/Header.css",
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/src\/components\/Main-min.js",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/src\/components\/PostFeed.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/components\/PostFeed-min.css",
-		"oF": 0,
-		"oS": 3
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/components\/PostFeed.js": {
 		"ft": 64,
@@ -149,29 +239,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/components\/PostFeed.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/components\/PostFeed.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/src\/containers\/App.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/containers\/App-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/src\/containers\/App.js": {
 		"ft": 64,
 		"ma": 0,
@@ -182,19 +249,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/src\/containers\/App.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/src\/containers\/App.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/src\/containers\/App.test.js": {
 		"ft": 64,
 		"ma": 0,
@@ -204,12 +258,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/src\/containers\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/src\/containers\/index.html",
-		"oF": 0
 		},
 	"\/src\/fonts\/HaasGrotDisp-55Roman.eot": {
 		"ft": 8192,
@@ -281,6 +329,98 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/src\/styles\/About.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/About-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/src\/styles\/About.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/About.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/App.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/App-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/src\/styles\/App.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/App.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/Header.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/Header-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/src\/styles\/Header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/Header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/PostFeed.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/PostFeed-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/src\/styles\/PostFeed.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/PostFeed.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		}
 	},
 "hooks": [

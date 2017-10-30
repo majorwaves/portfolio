@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
 import Main from '../components/Main.js';
-import './App.css';
+import '../styles/App.css';
 const contentful = require('contentful');
 
 var client = contentful.createClient({
