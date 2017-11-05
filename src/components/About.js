@@ -9,7 +9,7 @@ class About extends Component {
   return (
       <div className="about">
         <ReactMarkdown source={this.props.bio} />
-        <ReactMarkdown source={this.props.bio} />
+        <ReactMarkdown source={this.props.clientList} />
       </div>
     )
   }

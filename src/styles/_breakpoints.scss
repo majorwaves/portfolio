@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+@mixin breakpoint($point) {
+ @if $point == full {
+   @media (min-width: 1081px) { @content; }
+ }
+ @else if $point == large {
+   @media (min-width: 720px) { @content; }
+ }
+ @else if $point == tablet {
+   @media (min-width: 720px) and (max-width: 960px) { @content; }
+ }
+ @else if $point == small {
+   @media (max-width: 719px) { @content; }
+ }
+ @else if $point == phone {
+   @media (max-width: 480px) { @content; }
+ }
+ @else if $point == device {
+   @media (max-width: 1024px) { @content; }
+ }
+}

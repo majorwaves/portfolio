@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
 .postFeed {
   margin-top: 100px; }
   .postFeed .post {
@@ -10,19 +13,32 @@
       margin: 0;
       font-size: 0;
       position: relative;
-      border: 2px solid black;
-      padding-top: 30px; }
-      .postFeed .post figure:before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 50px;
-        height: 10px;
-        background: url(../images/web-buttons.svg) no-repeat;
-        background-size: 100%; }
+      border: 2px solid black; }
+      .postFeed .post figure.Logo {
+        margin-top: 30px; }
+        .postFeed .post figure.Logo:before {
+          content: "";
+          position: absolute;
+          top: -30px;
+          width: 90%;
+          height: 90%;
+          left: 5%;
+          border: 2px solid black;
+          z-index: -1; }
+      .postFeed .post figure.Website {
+        padding-top: 30px; }
+        .postFeed .post figure.Website img {
+          border-top: 2px solid black; }
+        .postFeed .post figure.Website:before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 50px;
+          height: 10px;
+          background: url(../images/web-buttons.svg) no-repeat;
+          background-size: 100%; }
       .postFeed .post figure img {
-        border-top: 2px solid black;
         width: 100%; }
     .postFeed .post .postInfo {
       width: 45.7vw; }
@@ -34,6 +50,12 @@
       .postFeed .post .postInfo span {
         font-size: 1.5vw;
         font-family: 'Inconsolata', monospace; }
+        .postFeed .post .postInfo span a {
+          position: relative; }
+          .postFeed .post .postInfo span a:before {
+            content: '\02937';
+            font-size: 30px;
+            margin-right: 20px; }
       .postFeed .post .postInfo p {
         font-size: 3.55vw; }
         .postFeed .post .postInfo p a {

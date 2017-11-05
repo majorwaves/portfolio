@@ -1,3 +1,5 @@
+@import "_breakpoints.scss";
+
 .postFeed {
   margin-top: 100px;
 
@@ -13,22 +15,43 @@
       font-size: 0;
       position: relative;
       border: 2px solid black;
-      padding-top: 30px;
 
-      &:before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 50px;
-        height: 10px;
-        background: url(../images/web-buttons.svg) no-repeat;
-        background-size: 100%;
+      &.Logo {
+        margin-top: 30px;
 
+        &:before {
+          content: "";
+          position: absolute;
+          top: -30px;
+          width: 90%;
+          height: 90%;
+          left: 5%;
+          border: 2px solid black;
+          z-index: -1;
+        }
+      }
+
+      &.Website {
+        padding-top: 30px;
+
+        img {
+          border-top: 2px solid black;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 50px;
+          height: 10px;
+          background: url(../images/web-buttons.svg) no-repeat;
+          background-size: 100%;
+
+        }
       }
 
       img {
-        border-top: 2px solid black;
         width: 100%;
       }
     }
@@ -46,6 +69,20 @@
       span {
         font-size: 1.5vw;
         font-family: 'Inconsolata', monospace;
+
+        a {
+          position: relative;
+
+          &:before {
+            content: '\02937';
+            font-size: 30px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+
+          }
+        }
       }
 
       p {

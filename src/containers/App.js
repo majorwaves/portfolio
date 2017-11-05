@@ -47,7 +47,7 @@ class App extends Component {
           twitter={this.state.info.twitter}
           instagram={this.state.info.instagram}/>
 
-        <Main bio={this.state.info.bio} projects={this.state.projects} />
+        <Main bio={this.state.info.bio} clientList={this.state.info.clientList} projects={this.state.projects} />
       </div>
     );
   }
