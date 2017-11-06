@@ -18,5 +18,5 @@
       .app.night figure.Website:before {
         background: url(../images/web-buttons-night.svg) no-repeat;
         background-size: 100%; }
-      .app.night figure.Logo:before {
+      .app.night figure.Logo:before, .app.night figure.Design:before {
         border-color: white; }
