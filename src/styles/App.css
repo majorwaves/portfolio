@@ -1,2 +1,22 @@
-body {
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+.app {
   padding: 3vw; }
+  @media (max-width: 1024px) {
+    .app {
+      padding: 5vw; } }
+  .app.night {
+    background: black;
+    color: white; }
+    .app.night a {
+      color: white; }
+    .app.night figure {
+      border-color: white; }
+      .app.night figure.Website img {
+        border-color: white; }
+      .app.night figure.Website:before {
+        background: url(../images/web-buttons-night.svg) no-repeat;
+        background-size: 100%; }
+      .app.night figure.Logo:before {
+        border-color: white; }

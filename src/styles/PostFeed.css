@@ -7,15 +7,26 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px; }
+    @media (max-width: 1024px) {
+      .postFeed .post {
+        display: block; } }
     .postFeed .post figure {
       width: 45.7vw;
+      height: 100%;
       padding: 0;
       margin: 0;
       font-size: 0;
       position: relative;
       border: 2px solid black; }
+      @media (max-width: 1024px) {
+        .postFeed .post figure {
+          width: 90vw;
+          margin-bottom: 20px; } }
       .postFeed .post figure.Logo {
         margin-top: 30px; }
+        .postFeed .post figure.Logo img {
+          position: relative;
+          z-index: 2; }
         .postFeed .post figure.Logo:before {
           content: "";
           position: absolute;
@@ -23,8 +34,7 @@
           width: 90%;
           height: 90%;
           left: 5%;
-          border: 2px solid black;
-          z-index: -1; }
+          border: 2px solid black; }
       .postFeed .post figure.Website {
         padding-top: 30px; }
         .postFeed .post figure.Website img {
@@ -42,14 +52,23 @@
         width: 100%; }
     .postFeed .post .postInfo {
       width: 45.7vw; }
+      @media (max-width: 1024px) {
+        .postFeed .post .postInfo {
+          width: auto; } }
       .postFeed .post .postInfo h1 {
         margin: 0 0 2vw;
         text-transform: uppercase;
         font-size: 3.5vw;
         font-weight: normal; }
+        @media (max-width: 1024px) {
+          .postFeed .post .postInfo h1 {
+            font-size: 8vw; } }
       .postFeed .post .postInfo span {
         font-size: 1.5vw;
         font-family: 'Inconsolata', monospace; }
+        @media (max-width: 1024px) {
+          .postFeed .post .postInfo span {
+            font-size: 5vw; } }
         .postFeed .post .postInfo span a {
           position: relative; }
           .postFeed .post .postInfo span a:before {
@@ -57,6 +76,9 @@
             font-size: 30px;
             margin-right: 20px; }
       .postFeed .post .postInfo p {
-        font-size: 3.55vw; }
+        font-size: 3.5vw; }
+        @media (max-width: 1024px) {
+          .postFeed .post .postInfo p {
+            font-size: 8vw; } }
         .postFeed .post .postInfo p a {
           font-style: italic; }

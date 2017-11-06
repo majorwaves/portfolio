@@ -9,7 +9,7 @@ class PostFeed extends Component {
       const description = project.fields.description;
       return (
         <div className="post" key={index}>
-          <figure class={project.fields.type}>
+          <figure className={project.fields.type}>
             <img alt={project.fields.title} src={project.fields.featuredImage.fields.file.url} />
           </figure>
           <div className="postInfo">

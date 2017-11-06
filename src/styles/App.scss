@@ -1,3 +1,39 @@
-body {
+@import '_breakpoints.scss';
+
+.app {
   padding: 3vw;
+
+  @include breakpoint(device) {
+    padding: 5vw;
+  }
+
+  &.night {
+    background: black;
+    color: white;
+
+    a {
+      color: white;
+    }
+
+    figure {
+      border-color: white;
+
+      &.Website {
+        img {
+          border-color: white;
+        }
+
+        &:before {
+          background: url(../images/web-buttons-night.svg) no-repeat;
+          background-size: 100%;
+        }
+      }
+
+      &.Logo {
+        &:before {
+          border-color: white;
+        }
+      }
+    }
+  }
 }

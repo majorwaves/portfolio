@@ -1,51 +1,76 @@
+@import '_breakpoints.scss';
+
 header {
   font-size: 3.5vw;
+
+  @include breakpoint(device) {
+    font-size: 8vw;
+  }
 
   .site-title {
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @include breakpoint(device) {
+      text-align: center;
+    }
   }
 
   .sub-header {
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint(device) {
+      flex-direction: column;
+    }
+
     .sub-header-column {
       width: 21.5vw;
 
-      &:first-of-type {
-        &:after {
-          content: "\25D0";
-          display: block;
-          margin-top: .5em;
-          font-size: 3vw;
+      @include breakpoint(device) {
+        width: 35vw;
+        flex-direction: column;
+
+        &:nth-of-type(2n) {
+          align-self: flex-end;
         }
       }
 
-      &:nth-of-type(2) {
-        &:after {
-          content: "\25D3";
-          display: block;
-          margin-top: .5em;
-          font-size: 3vw;
+      @include breakpoint(full) {
+        &:first-of-type {
+          &:after {
+            content: "\25D0";
+            display: block;
+            margin-top: .5em;
+            font-size: 3vw;
+          }
         }
-      }
 
-      &:nth-of-type(3) {
-        &:after {
-          content: "\25D1";
-          display: block;
-          margin-top: .5em;
-          font-size: 3vw;
+        &:nth-of-type(2) {
+          &:after {
+            content: "\25D3";
+            display: block;
+            margin-top: .5em;
+            font-size: 3vw;
+          }
         }
-      }
 
-      &:nth-of-type(4) {
-        &:after {
-          content: "\25D2";
-          display: block;
-          margin-top: .5em;
-          font-size: 3vw;
+        &:nth-of-type(3) {
+          &:after {
+            content: "\25D1";
+            display: block;
+            margin-top: .5em;
+            font-size: 3vw;
+          }
+        }
+
+        &:nth-of-type(4) {
+          &:after {
+            content: "\25D2";
+            display: block;
+            margin-top: .5em;
+            font-size: 3vw;
+          }
         }
       }
     }

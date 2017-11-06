@@ -19,6 +19,14 @@ class App extends Component {
   }
 
   componentDidMount() {
+
+    //Check time
+    const hours = new Date().getHours();
+    const isDayTime = hours > 6 && hours < 20;
+    this.setState({
+      daytime: isDayTime
+    });
+
     // TODO: Make this one request
     client.getEntry('48yFnnMfyweEu0usOsIQaI')
       .then((entry) => {
@@ -40,7 +48,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={'app ' + (this.state.daytime ? 'day' : 'night')}>
         <Header
           description={this.state.info.description}
           location={this.state.info.location}
