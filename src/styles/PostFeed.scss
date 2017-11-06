@@ -42,6 +42,12 @@
           height: 90%;
           left: 5%;
           border: 2px solid black;
+
+          @include breakpoint(device) {
+            left: 10%;
+            width: 80%;
+            height: 80%;
+          }
         }
       }
 

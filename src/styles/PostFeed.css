@@ -35,6 +35,11 @@
           height: 90%;
           left: 5%;
           border: 2px solid black; }
+          @media (max-width: 1024px) {
+            .postFeed .post figure.Logo:before {
+              left: 10%;
+              width: 80%;
+              height: 80%; } }
       .postFeed .post figure.Website {
         padding-top: 30px; }
         .postFeed .post figure.Website img {
