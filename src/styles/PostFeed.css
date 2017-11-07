@@ -22,12 +22,12 @@
         .postFeed .post figure {
           width: 90vw;
           margin-bottom: 20px; } }
-      .postFeed .post figure.Logo, .postFeed .post figure.Design {
+      .postFeed .post figure.Logo, .postFeed .post figure.Design, .postFeed .post figure.Photography {
         margin-top: 30px; }
-        .postFeed .post figure.Logo img, .postFeed .post figure.Design img {
+        .postFeed .post figure.Logo img, .postFeed .post figure.Design img, .postFeed .post figure.Photography img {
           position: relative;
           z-index: 2; }
-        .postFeed .post figure.Logo:before, .postFeed .post figure.Design:before {
+        .postFeed .post figure.Logo:before, .postFeed .post figure.Design:before, .postFeed .post figure.Photography:before {
           content: "";
           position: absolute;
           top: -30px;
@@ -36,7 +36,7 @@
           left: 5%;
           border: 2px solid black; }
           @media (max-width: 1024px) {
-            .postFeed .post figure.Logo:before, .postFeed .post figure.Design:before {
+            .postFeed .post figure.Logo:before, .postFeed .post figure.Design:before, .postFeed .post figure.Photography:before {
               left: 10%;
               width: 80%;
               height: 80%; } }

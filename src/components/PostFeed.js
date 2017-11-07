@@ -15,7 +15,7 @@ class PostFeed extends Component {
           <div className="postInfo">
             <h1>{project.fields.title}</h1>
             <span>
-            <a target="_blank" href={project.fields.link}>{project.fields.link}</a>
+            {project.fields.link ? <a target="_blank" href={project.fields.link}>{project.fields.link}</a> : ''}
             </span>
             <ReactMarkdown source={description} />
           </div>
