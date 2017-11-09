@@ -3,6 +3,14 @@
 .app {
   padding: 3vw;
 
+  ::selection {
+    background: rgba(255,0,66,.99);
+  }
+
+  &::-moz-selection {
+    background: #ef153d;
+  }
+
   @include breakpoint(device) {
     padding: 5vw;
   }
