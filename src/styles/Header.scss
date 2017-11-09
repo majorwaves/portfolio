@@ -1,7 +1,7 @@
 @import '_breakpoints.scss';
 
 header {
-  font-size: 3.5vw;
+  font-size: 3vw;
 
   @include breakpoint(device) {
     font-size: 8vw;

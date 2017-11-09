@@ -17,7 +17,7 @@ class Header extends Component {
             {this.props.location}
           </div>
             <div className="sub-header-column">
-              <a href="mailto:majorwaves@gmail.com">Contact</a>, <Link to='/about'>About</Link>
+              <a href="mailto:majorwaves@gmail.com">Contact</a>,<br/> <Link to='/about'>About</Link>
             </div>
             <div className="sub-header-column">
               <a href={this.props.twitter}>Twitter</a>, <a href={this.props.instagram}>Instagram</a>

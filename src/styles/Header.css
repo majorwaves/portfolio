@@ -2,7 +2,7 @@
    Breakpoints
    ========================================================================== */
 header {
-  font-size: 3.5vw; }
+  font-size: 3vw; }
   @media (max-width: 1024px) {
     header {
       font-size: 8vw; } }
