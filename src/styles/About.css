@@ -20,6 +20,10 @@
   .about p {
     font-size: 2vw;
     line-height: 3.5vw; }
+    @media (max-width: 1024px) {
+      .about p {
+        font-size: 8vw;
+        line-height: 10vw; } }
     .about p a {
       text-decoration: underline; }
   .about ul {
@@ -29,7 +33,9 @@
     line-height: 3.5vw; }
     @media (max-width: 1024px) {
       .about ul {
-        width: auto; } }
+        width: auto;
+        font-size: 8vw;
+        line-height: 10vw; } }
     .about ul li {
       display: inline; }
       .about ul li:after {

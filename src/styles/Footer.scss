@@ -6,4 +6,8 @@ footer {
   text-align: center;
   color: $primary;
   letter-spacing: 1vw;
+
+  @include breakpoint(device) {
+    font-size: 8vw;
+  }
 }
