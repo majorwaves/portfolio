@@ -22,6 +22,8 @@
     color: white; }
     .app.night a {
       color: white; }
+      .app.night a:hover {
+        color: #ff0664; }
     .app.night figure {
       border-color: white; }
       .app.night figure.Website img {
