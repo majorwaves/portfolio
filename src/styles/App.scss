@@ -1,7 +1,9 @@
 @import '_breakpoints.scss';
+@import '_colors.scss';
 
 .app {
   padding: 3vw;
+  color: $primary;
 
   ::selection {
     background: rgba(255,0,66,.99);
@@ -13,6 +15,15 @@
 
   @include breakpoint(device) {
     padding: 5vw;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary;
+    }
   }
 
   &.night {

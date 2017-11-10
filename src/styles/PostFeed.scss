@@ -1,4 +1,5 @@
-@import "_breakpoints.scss";
+@import '_breakpoints.scss';
+@import '_colors.scss';
 
 .postFeed {
   margin-top: 100px;
@@ -19,7 +20,7 @@
       margin: 0;
       font-size: 0;
       position: relative;
-      border: 2px solid black;
+      border: 2px solid $primary;
 
       @include breakpoint(device) {
         width: 90vw;
@@ -41,7 +42,7 @@
           width: 90%;
           height: 90%;
           left: 5%;
-          border: 2px solid black;
+          border: 2px solid $primary;
 
           @include breakpoint(device) {
             left: 10%;
@@ -56,7 +57,7 @@
         padding-top: 30px;
 
         img {
-          border-top: 2px solid black;
+          border-top: 2px solid $primary;
         }
 
         &:before {

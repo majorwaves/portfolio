@@ -2,7 +2,8 @@
    Breakpoints
    ========================================================================== */
 .app {
-  padding: 3vw; }
+  padding: 3vw;
+  color: black; }
   .app ::selection {
     background: rgba(255, 0, 66, 0.99); }
   .app::-moz-selection {
@@ -10,6 +11,11 @@
   @media (max-width: 1024px) {
     .app {
       padding: 5vw; } }
+  .app a {
+    color: black;
+    text-decoration: none; }
+    .app a:hover {
+      color: #ff0664; }
   .app.night {
     background: black;
     color: white; }
