@@ -21,9 +21,16 @@
     }
   }
 
+  p {
+    font-size: 2vw;
+    line-height: 3.5vw;
+  }
+
   ul {
     width: 45.7vw;
     padding: 0;
+    font-size: 2vw;
+    line-height: 3.5vw;
 
     @include breakpoint(device) {
       width: auto;

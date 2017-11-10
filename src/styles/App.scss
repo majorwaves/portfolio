@@ -4,6 +4,7 @@
 .app {
   padding: 3vw;
   color: $primary;
+  min-height: calc(100vh - 6vw);
 
   ::selection {
     background: rgba(255,0,66,.99);
