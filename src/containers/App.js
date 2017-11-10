@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
 import Main from '../components/Main.js';
+import Footer from '../components/Footer.js';
 import '../styles/App.css';
 const contentful = require('contentful');
 
@@ -56,6 +57,7 @@ class App extends Component {
           instagram={this.state.info.instagram}/>
 
         <Main bio={this.state.info.bio} clientList={this.state.info.clientList} projects={this.state.projects} />
+        <Footer />
       </div>
     );
   }

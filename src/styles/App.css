@@ -33,3 +33,5 @@
         background-size: 100%; }
       .app.night figure.Logo:before, .app.night figure.Design:before, .app.night figure.Photography:before {
         border-color: white; }
+    .app.night footer {
+      color: white; }

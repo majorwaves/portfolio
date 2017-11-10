@@ -1,0 +1,9 @@
+@import '_breakpoints.scss';
+@import '_colors.scss';
+
+footer {
+  font-size: 3vw;
+  text-align: center;
+  color: $primary;
+  letter-spacing: 1vw;
+}
