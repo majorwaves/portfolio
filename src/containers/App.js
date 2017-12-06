@@ -38,7 +38,7 @@ class App extends Component {
 
     client.getEntries({
       content_type: 'project',
-      order: 'fields.date'
+      order: '-fields.date'
     })
     .then((entries) => {
         this.setState({
