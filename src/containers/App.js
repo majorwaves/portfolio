@@ -38,7 +38,7 @@ class App extends Component {
 
     client.getEntries({
       content_type: 'project',
-      order: 'sys.createdAt'
+      order: 'fields.date'
     })
     .then((entries) => {
         this.setState({
