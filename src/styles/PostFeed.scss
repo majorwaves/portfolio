@@ -106,6 +106,8 @@
 
         a {
           position: relative;
+          overflow-wrap: break-word;
+          word-wrap: break-word;
 
           &:before {
             content: '\02937';
