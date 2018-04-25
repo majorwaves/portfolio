@@ -75,7 +75,9 @@
           .postFeed .post .postInfo span {
             font-size: 5vw; } }
         .postFeed .post .postInfo span a {
-          position: relative; }
+          position: relative;
+          overflow-wrap: break-word;
+          word-wrap: break-word; }
           .postFeed .post .postInfo span a:before {
             content: '\02937';
             font-size: 30px;
